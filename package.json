@@ -11,7 +11,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +29,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier-eslint": "^9.0.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "prettier-stylelint": "^0.4.2"
   }
 }
